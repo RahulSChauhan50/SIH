@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  overflow: hidden;
+}
+
+.canvaBarz {
+  overflow: hidden;
 }
 
 .App-logo {
@@ -36,7 +41,118 @@
     transform: rotate(360deg);
   }
 }
-#root{
+#root {
   width: 100%;
   height: 100vh;
+}
+
+/* app bar */
+.canave-eraser {
+  margin-left: 50px;
+  margin-right: 50px;
+  position: relative;
+}
+
+.canva-pencil {
+  position: relative;
+}
+
+.eraserIcon:hover {
+  color: #000 !important;
+}
+
+.pencilIcon:hover {
+  color: coral;
+}
+
+.dropIcon {
+  margin-left: 8px;
+  font-size: 24px !important;
+}
+
+.colorContainer,
+.colorStroke {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+
+.eraserContainer {
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  position: absolute;
+}
+
+.blue,
+.red,
+.green,
+.black {
+  background-color: blue;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.blue:hover {
+  transform: scale(1.2);
+}
+
+.red {
+  background-color: red;
+}
+.red:hover {
+  transform: scale(1.2);
+}
+
+.green {
+  background-color: green;
+}
+
+.green:hover {
+  transform: scale(1.2);
+}
+
+.black {
+  background-color: #000;
+}
+
+.set {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.color {
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color-1 {
+  width: 6px;
+  height: 6px;
+}
+.color-2 {
+  width: 8px;
+  height: 8px;
+}
+.color-3 {
+  width: 10px;
+  height: 10px;
+}
+.color-4 {
+  width: 12px;
+  height: 12px;
 }
